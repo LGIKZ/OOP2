@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Указывает версию модели POM -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Уникальный идентификатор группы, к которой принадлежит проект -->
+    <groupId>com.example</groupId>
+
+    <!-- Уникальный идентификатор артефакта (проекта) -->
+    <artifactId>trigonometry-app</artifactId>
+
+    <!-- Версия проекта, 'SNAPSHOT' указывает на то, что это версия, находящаяся в разработке -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Указывает тип пакета, в данном случае это веб-приложение (WAR) -->
+    <packaging>war</packaging>
+
+    <dependencies>
+        <!-- Зависимости проекта -->
+
+        <!-- Зависимость для работы с сервлетами -->
+        <dependency>
+            <!-- Уникальный идентификатор группы для зависимости -->
+            <groupId>javax.servlet</groupId>
+
+            <!-- Уникальный идентификатор артефакта для зависимости -->
+            <artifactId>javax.servlet-api</artifactId>
+
+            <!-- Версия зависимости -->
+            <version>4.0.1</version>
+
+            <!-- Указывает, что эта зависимость предоставляется контейнером сервлетов (например, Tomcat) и не будет включена в финальный артефакт -->
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- Конфигурация сборки проекта -->
+
+        <!-- Указывает имя финального артефакта, который будет создан при сборке -->
+        <finalName>trigonometry-app</finalName>
+    </build>
+</project>
+
